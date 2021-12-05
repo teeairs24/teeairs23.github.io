@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en" and dir="ltr">
+    <head><meta charset="utf-8">
+    <title>EDUCATION</title>
+    <style>
+
+html, body {
+	height:100%;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Orbitron');
+body {
+	width: 100%;
+	background: #53034f;
+    background-image: url(ME.jpeg);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+span {
+  font-family:Montserrat;
+  font-size:0.5em;
+  color:#fff;
+}
+#header{
+	position: absolute;
+	z-index: 2000;
+	width: 100%;
+	top:-30px;
+}
+#header h1{
+	font-size: 30px;
+  font-family:Orbitron;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+	padding: 20px;
+	background: #000;
+}
+#navigation {
+	margin-top: 20px;
+	width: 235px;
+	display:block;
+	list-style:none;
+	z-index:3;
+}
+
+.content{
+	right: 40px;
+	left: 280px;
+	top: 50px;
+	position: absolute;
+	padding-bottom: 0px;
+  animation: slideIn 1.5s ease-in-out forwards;
+    
+}
+.content h2{
+	font-size: 80px;
+  font-family:Orbitron;
+	padding: 0px 0px 0px 0px;
+	margin-top: 52px;
+	color: #fff;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+h3 {
+  color:#fff;
+}
+.content p{
+	font-size: 18px;
+	padding: 10px;
+	line-height: 24px;
+	color: rgb(228, 235, 240);
+	display: inline-block;
+	border:1px solid #007CBF;
+	padding: 10px;
+	margin: 3px 0px;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+.content ul{
+	font-size: 18px;
+	padding: 10px;
+	line-height: 24px;
+	color: rgb(6, 7, 7);
+	display: inline-block;
+	border:1px solid #007CBF;
+	padding: 10px;
+	margin: 3px 0px;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+.panel{
+	width: 98%;
+	min-height: 100%;
+	position: absolute;
+	background-color: #000;
+	box-shadow: 4px -4px 4px rgba(0,0,0,0.2);
+	margin-left: -102%;
+	z-index:2;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+}
+.panel:target{
+	margin-left: 0%;
+	background-color: #005CBF;
+}
+
+#works {
+	padding: 15px 0px;
+}
+#works li{
+	display: inline;
+}
+
+#form p{
+	background: #fff;
+	color: #000;
+}
+#form input, #form textarea{
+	background: #000;
+	color: #fff;
+	border: none;
+}
+#form textarea{
+	width: 493px;
+	height: 100px;
+}
+#form label{
+	padding-right: 10px;
+	float: left;
+}
+.footnote a{
+	color: #fff;
+}
+.one { width: 6.866%; }
+.button-1{
+  font-family:Montserrat;
+  display: inline-block;
+  padding: 20px 40px;
+  margin: 10px 0;
+  position: relative;
+  color: #fff;
+  border: 1px solid #fff;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button-1:before{
+  font-family:Montserrat;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background-color: #007CBF;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button-1:hover{
+  color: #fff;
+}
+.button-1:hover:before{
+  left: 0;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.10);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+.details{
+    width: 200%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: large;
+}
+.details span
+{
+  font-size: x-large;
+}
+.bar{
+    position: relative;
+    border: 2px solid #0d96e0;
+    border-radius: 20px;
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+#html-bar{
+    animation: html-fill 20s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 66%;
+    }
+}
+#css-bar{
+    animation: css-fill 20s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 63%;
+    }
+}
+#Csharp-bar{
+    animation: Csharp-fill 20s forwards;
+}
+@keyframes Csharp-fill{
+    100%{
+        width: 49%;
+    }
+}
+#JavaScript-bar{
+    animation: JavaScript-fill 20s forwards;
+}
+@keyframes JavaScript-fill{
+    100%{
+        width: 46%;
+    }
+}
+.content ul
+{
+  top:0px;
+}
+  </style>
+
+ 
+<body>
+    <div id="home" class="content" >
+        <h2><span><img src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/64/000000/external-education-international-ngo-inipagistudio-lineal-color-inipagistudio.png"/></span> EDUCATION</h2>
+        <ul><b>High School:</b> Tsamma Secondary School<br><b>Qualification:</b> National Senior Certificate <br>
+          <b>Status:</b> Completed(2017)<br><br>
+        <b>Major Subjects Completed:</b> <br>
+        PHYSICAL SCIENCE<br>
+        MATHEMATICS<br>
+        LIFE SCIENCE<br>
+        GEOGRAPHY<br>
+        </ul>
+      
+        <ul><b>Tartiary Inst.:</b> North West University<br>
+            <b>Qualification:</b>  BSc In Information Technology<br>
+            <b>Status:</b>  (Incomplete 2019 - 2021(Currently comleting))<br><br>
+            <b>Major Courses Completed:</b> <br>
+            APPS AND ADVANCED USER INTERFACE PROGRAMMING<br>
+            OBJECT ORIENTED PROGRAMMING<br>
+            SYSTEM ANALYSIS AND DESIGN<br>
+            INFORMATION SECURITY<br>
+            DATA STRUCTURES and ALGORITHMS<br>
+            Adv DATABASES<br>
+            COMPUTER NETWORKS   <br>
+            IT DEVELOPMENTS<br>
+        </ul>
+    </div>
+        <div id="samples" class="panel">
+        <div class="content">
+            <h2><span><img width= "50" src="https://img.icons8.com/material-outlined/24/000000/programming.png"/></span> PROGRAMMING</h2>
+            <div class="skills">
+              <div class="details">
+                <span>HTML</span>
+                
+              </div>
+              <div class="bar">
+                 <div id="html-bar"></div>
+              </div>
+            </div>
+            <div class="skills">
+              <div class="details">
+                <span>CSS</span>
+                
+              </div>
+              <div class="bar">
+                 <div id="css-bar"></div>
+              </div>
+            </div>
+            <div class="skills">
+              <div class="details">
+                <span>C#</span>
+               
+              </div>
+              <div class="bar">
+                 <div id="Csharp-bar"></div>
+              </div>
+            </div>
+            <div class="skills">
+              <div class="details">
+                <span>JavaScript</span>
+                
+              </div>
+              <div class="bar">
+                 <div id="JavaScript-bar"></div>
+              </div>
+            </div>
+                
+        </div>
+    </div>
+    <div id="offers" class="panel">
+        <div class="content">
+            <h2>EXPERIENCE</h2>
+            <p><span><img src="https://img.icons8.com/nolan/50/project.png"/></span> <b>Projects</b><br> go to https://github.com/teeairs24</a></p>
+            <p><span><img src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/50/000000/external-course-language-learning-inipagistudio-lineal-color-inipagistudio.png"/></span> <b>ShortOnline Courses</b><br>Achievements: <br> IBM badge 1-4<br>Udemy 1-4</p>
+            <p><span><img src="https://img.icons8.com/color/64/000000/work.png"/></span> <b>Work Experience</b><br>
+            Zero years Experience</p>
+        </div>
+    </div>
+    <div id="contact" class="panel">
+        <div class="content">
+            <h2><span><img src="https://img.icons8.com/pastel-glyph/64/000000/personal-growth.png"/></span>Core Skills</h2>
+            <p><span><img src="https://img.icons8.com/emoji/48/000000/technologyst.png"/></span><b>Personal Skills</b><br>
+        - Good team-player<br>
+        - Critical thinking<br>
+        - Good communication skill<br>
+        - Internal negotiation<br>
+        - Adaptability</p>
+        <p><span><img src="https://img.icons8.com/external-soft-fill-juicy-fish/60/000000/external-pc-information-technology-soft-fill-soft-fill-juicy-fish.png"/></span><b>Software Generally</b><br>
+          - Good Computer Software-use skill<br>
+          - Good Microsoft office usage skills<br>
+           - Good Computer hardware knowledge</p>
+        </div>
+        
+    </div>
+    <div id="header">
+  <h1>DEVELOPMENTS</h1>
+  
+        <ul id="navigation">
+            <li><a id="link-home" href="#home" class="button-1">EDUCATION</a></li>
+            <li><a id="link-samples" href="#samples" class="button-1">TECH SKLLS</a></li>
+            <li><a id="link-contact" href="#contact" class="button-1">CORE SKILLS</a></li>
+            <li><a id="link-offers" href="#offers" class="button-1">EXPERIENCE</a></li>
+            <li><a href="About.html" class="button-1">MyINFO</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+</ul>
+<p><a href="About.html">BACK</a>.</p>
